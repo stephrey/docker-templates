@@ -42,7 +42,7 @@
       }
     ]
   },
-    {
+  {
     "type": 1,
     "title": "wago mqtt-broker",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/mqtt.png?raw=true",
