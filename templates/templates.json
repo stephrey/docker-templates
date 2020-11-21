@@ -1,4 +1,22 @@
 [  
+ {
+    "type": 1,
+    "title": "wago network-creation",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/docker.png?raw=true",
+    "description": "Container to init an network for TICK stack",
+    "image": "docker",
+	"network": "bridge",
+	"command": "docker network create monitoring",
+    "name": "wago-network-init",
+	"restart_policy": "no",
+    "platform": "linux",
+    "volumes": [
+      {
+        "bind": "/var/run/docker.sock",
+        "container": "/var/run/docker.sock"
+      }     
+    ] 	
+  },
   {
     "type": 1,
     "title": "wago node-red-iot",
