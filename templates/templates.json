@@ -2,7 +2,7 @@
   {
     "type": 1,
     "title": "wago node-red-iot",
-    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/nodered.png?raw=true",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/mqtt.png?raw=true",
     "description": "Container with Node-red-iot",
     "image": "wagoautomation/node-red-iot:latest",
     "restart_policy": "unless-stopped",
