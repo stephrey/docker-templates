@@ -120,7 +120,7 @@
  {
     "type": 1,
     "title": "wago influxdb-db",    
-    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/influx.png?raw=true",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/influxdb.png?raw=true",
     "description": "Container with Influx DB",
     "image": "influxdb",
     "name": "wago-influxdb",
