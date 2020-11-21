@@ -1,0 +1,28 @@
+[  
+    {
+    "type": 1,
+    "title": "wago mqtt-broker",
+    "logo": "http://192.168.2.45/wago/mqtt.png",
+    "description": "Container with MQTT Broker",
+    "image": "eclipse-mosquitto",
+    "restart_policy": "unless-stopped",
+    "name": "wago-mqtt-broker",
+    "network": "host",
+    "platform": "linux",
+    "ports": [
+      "1883:1883/tcp",
+	  "9001:9001/tcp"
+    ],
+    "volumes": [
+      {
+        "bind": "mosquitto-volume",
+        "container": "/mosquitto/data"
+      },
+      {
+        "bind": "mosquitto-log",
+        "container": "/mosquitto/log"
+      }
+    ]
+]
+
+
