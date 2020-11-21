@@ -2,7 +2,7 @@
  {
     "type": 1,
     "title": "wago network-creation",    
-    "logo": "http://192.168.2.45/wago/docker.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/docker.png?raw=true",
     "description": "Container to init an network for TICK stack",
     "image": "docker",
 	"network": "bridge",
@@ -20,7 +20,7 @@
   {
     "type": 1,
     "title": "wago node-red-iot",
-    "logo": "http://192.168.2.45/wago/nodered.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/node-red.png?raw=true",
     "description": "Container with Node-red-iot",
     "image": "wagoautomation/node-red-iot:latest",
     "restart_policy": "unless-stopped",
@@ -45,7 +45,7 @@
     {
     "type": 1,
     "title": "wago mqtt-broker",
-    "logo": "http://192.168.2.45/wago/mqtt.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/mqtt.png?raw=true",
     "description": "Container with MQTT Broker",
     "image": "eclipse-mosquitto",
     "restart_policy": "unless-stopped",
@@ -70,7 +70,7 @@
     {
     "type": 1,
     "title": "wago influxdb-generate-empty-db",    
-    "logo": "http://192.168.2.45/wago/influxempty.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/influxempty.png?raw=true",
     "description": "Container to init an empty Influx DB",
     "image": "influxdb",
     "name": "wago-influxdb-init-database",
@@ -120,7 +120,7 @@
  {
     "type": 1,
     "title": "wago influxdb-db",    
-    "logo": "http://192.168.2.45/wago/influxdb.png",
+    "logo": ""https://github.com/Helmut-Saal/docker-templates/blob/main/icons/influx.png?raw=true",
     "description": "Container with Influx DB",
     "image": "influxdb",
     "name": "wago-influxdb",
@@ -147,7 +147,7 @@
  {
     "type": 1,
     "title": "wago telegraf-configuration",    
-    "logo": "http://192.168.2.45/wago/alpine.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/alpine.png?raw=true",
     "description": "Container to set telegraf.conf file ",
     "image": "wagoautomation/config-tickstack:1.0.0",
 	"command": "/root/do.sh",
@@ -164,7 +164,7 @@
  {
     "type": 1,
     "title": "wago telegraf",    
-    "logo": "http://192.168.2.45/wago/telegraf.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/telegraf.png?raw=true",
     "description": "Container to collect data and push to Influx DB",
     "image": "telegraf",
     "name": "wago-telegraf",
@@ -181,7 +181,7 @@
  {
     "type": 1,
     "title": "wago chronograf",    
-    "logo": "http://192.168.2.45/wago/chronograf.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/chronograf.png?raw=true",
     "description": "Container to query Influx DB",
     "image": "chronograf",
     "name": "wago-chronograf",
