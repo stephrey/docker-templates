@@ -42,7 +42,6 @@
       }
     ]
   },
-  ,
     {
     "type": 1,
     "title": "wago mqtt-broker",
