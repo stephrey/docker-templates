@@ -6,7 +6,7 @@
   {
     "type": 1,
     "title": "wago pfc200-modbusslave",
-    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wago.png?raw=true",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container that makes a PFC to a modbus slave",
     "image": "wagoautomation/pfc-modbus-slave",
     "init": true,
