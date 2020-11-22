@@ -1,0 +1,30 @@
+
+{
+"version": "2",
+"templates":
+[
+  {
+    "type": 1,
+    "title": "wago pfc200-modbusslave",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wago.png?raw=true",
+    "description": "Container that makes a PFC to a modbus slave",
+    "image": "wagoautomation/pfc-modbus-slave",
+    "init": true,
+    "privileged": true,
+    "restart_policy": "unless-stopped",
+    "name": "wago-pfc-modbus-slave",
+        "network": "host",
+    "platform": "linux",
+    "ports": [
+      "502:502/tcp",
+          "502:502/udp"
+    ],
+    "volumes": [
+      {
+        "bind": "/var/run/dbus/system_bus_socket",
+        "container": "/var/run/dbus/system_bus_socket"
+      }
+    ]
+  }
+]
+}
