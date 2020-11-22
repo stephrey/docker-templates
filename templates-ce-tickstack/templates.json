@@ -1,8 +1,5 @@
-{
-"version": "2",
-"templates":
-[
-  {
+[  
+ {
     "type": 1,
     "title": "wago network-creation",    
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/docker.png?raw=true",
@@ -209,4 +206,5 @@
     ] 	
   }
 ]
-}
+
+
