@@ -7,7 +7,7 @@
     "type": 1,
     "title": "wago pfc200-modbusslave",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
-    "description": "Container that makes a PFC to a modbus slave. IMPORTANT: Disable sps runtime in wbm to none!",
+    "description": "Container that makes a PFC to a modbus slave. IMPORTANT: Disable sps runtime in wbm to none! Set RUN switch!",
     "image": "wagoautomation/pfc-modbus-slave",
     "init": true,
     "privileged": true,
