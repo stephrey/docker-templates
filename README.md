@@ -3,10 +3,10 @@
 
 <H4>To use TickStak make entry inside portainer settings use external templates:</H4>
 
----
+~~~
 With portainer-ce change: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-tickstack/templates-ce.json?raw=true
 With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-tickstack/templates.json?raw=true
----
+~~~
 <H4>To use PFC modbusslave make entry inside portainer settings use external templates:</H4>
 
 ~~~  
