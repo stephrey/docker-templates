@@ -37,7 +37,7 @@
     "platform": "linux",
     "ports": [
       "8081:8081/tcp"
-    ],
+    ]
   },
     {
     "type": 1,
