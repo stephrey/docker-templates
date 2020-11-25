@@ -1,4 +1,3 @@
-
 {
 "version": "2",
 "templates":
@@ -26,29 +25,32 @@
       }
     ]
   },
-    {
+ {
     "type": 1,
     "title": "wago fledge",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/fledge.png?raw=true",
     "description": "Container for OsiSoft cloud connection",
     "image": "wagoautomation/fledge:1.8.1",
-	"init": true,
+    "init": true,
     "restart_policy": "unless-stopped",
+    "name": "wago fledge",
     "platform": "linux",
-    "ports": 
+    "ports": [
       "8081:8081/tcp"
+    ]         
   },
-    {
+ {
     "type": 1,
-    "title": "wago fledge-gui",
+    "title": "wago fledge-guui",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/fledge.png?raw=true",
-    "description": "Container GUI for configuration fledge cloud connector.",
+    "description": "Container to manage OsiSoft cloud connector via GUI.",
     "image": "wagoautomation/fledge-gui",
     "restart_policy": "unless-stopped",
-    "name": "wago-pfc-fledge-gui",
+    "name": "wago fledge",
     "platform": "linux",
-    "ports": 
+    "ports": [
       "8082:8082/tcp"
+    ]
   }
 ]
 }
