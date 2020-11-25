@@ -46,7 +46,7 @@
     "description": "Container to manage OsiSoft cloud connector via GUI.",
     "image": "wagoautomation/fledge-gui:latest",
     "restart_policy": "unless-stopped",
-    "name": "wago fledge-gui",
+    "name": "wago fledge gui",
     "platform": "linux",
     "ports": [
       "8082:8082/tcp"
