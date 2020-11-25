@@ -49,7 +49,7 @@
     "name": "wago-fledge-gui",
     "platform": "linux",
     "ports": [
-      "8082:8082/tcp"
+      "8082:80/tcp"
     ]
   }
 ]
