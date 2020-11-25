@@ -41,7 +41,7 @@
   },
  {
     "type": 1,
-    "title": "wago fledge-guui",
+    "title": "wago fledge-gui",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/fledge.png?raw=true",
     "description": "Container to manage OsiSoft cloud connector via GUI.",
     "image": "wagoautomation/fledge-gui",
