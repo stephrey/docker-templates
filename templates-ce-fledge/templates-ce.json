@@ -4,7 +4,7 @@
 [
   {
     "type": 1,
-    "title": "wago-pfc200-modbusslave",
+    "title": "wago pfc200 modbusslave",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container that makes a PFC to a modbus slave. IMPORTANT: Disable sps runtime in wbm to none! Set RUN switch!",
     "image": "wagoautomation/pfc-modbus-slave",
@@ -27,13 +27,13 @@
   },
  {
     "type": 1,
-    "title": "wago-fledge",
+    "title": "wago fledge",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/fledge.png?raw=true",
     "description": "Container for OsiSoft cloud connection",
     "image": "wagoautomation/fledge:1.8.1",
     "init": true,
     "restart_policy": "unless-stopped",
-    "name": "wago fledge-connector",
+    "name": "wago-fledge-connector",
     "platform": "linux",
     "ports": [
       "8081:8081/tcp"
@@ -41,7 +41,7 @@
   },
  {
     "type": 1,
-    "title": "wago-fledge-gui",
+    "title": "wago fledge gui",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/fledge.png?raw=true",
     "description": "Container to manage OsiSoft cloud connector via GUI.",
     "image": "wagoautomation/fledge-gui:latest",
