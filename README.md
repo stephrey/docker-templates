@@ -22,6 +22,6 @@ With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templa
 <H4>Update the Hostfirmware of PFC200 G2, make entry inside portainer settings use external templates:</H4>
 
 ~~~  
-With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-fledge/templates-ce.json?raw=true 
-With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-fledge/templates.json?raw=true
+With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-fwUpdate/templates-ce.json?raw=true 
+With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-fwUpdate/templates.json?raw=true
 ~~~
