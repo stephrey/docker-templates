@@ -1,0 +1,48 @@
+[
+  {
+    "type": 1,
+    "title": "wago pfc200 FW-Update",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of PFC 200 G2 -[18]",
+    "image": "wagoautomation/fw-update:3.0.18",
+    "restart_policy": "on-failure:5",
+    "name": "fw",
+        "network": "host",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD=wago",
+      "label": "Root password",
+      "description": "Password used by the root user."
+    },
+    {
+      "name": "SERVICE_NAME=fw",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name."
+    }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "wago pfc200 FW-Update",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of PFC 200 G2 -[17]",
+    "image": "wagoautomation/fw-update:3.0.17",
+    "restart_policy": "on-failure:5",
+    "name": "fw",
+    "network": "host",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD=wago",
+      "label": "Root password",
+      "description": "Password used by the root user."
+    },
+    {
+      "name": "SERVICE_NAME=fw",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name."
+    }
+    ]
+  }
+]
