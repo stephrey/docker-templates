@@ -10,7 +10,7 @@
     "image": "wagoautomation/fw-update:3.0.18",
     "restart_policy": "on-failure:5",
     "name": "fw",
-        "network": "host",
+    "network": "host",
     "platform": "linux",
     "env": [
     {
