@@ -1,7 +1,7 @@
 [
   {
     "type": 1,
-    "title": "wago pfc200 FW-Update",
+    "title": "wago pfc200 FW-Update FW18",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to update Host-Firmware of PFC 200 G2 -[18]",
     "image": "wagoautomation/fw-update:3.0.18",
@@ -24,7 +24,7 @@
   },
   {
     "type": 1,
-    "title": "wago pfc200 FW-Update",
+    "title": "wago pfc200 FW-Update FW17",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to update Host-Firmware of PFC 200 G2 -[17]",
     "image": "wagoautomation/fw-update:3.0.17",
