@@ -23,5 +23,5 @@ With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templa
 
 ~~~  
 With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-modbusslave/templates-ce.json?raw=true 
-With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-fledge/templates.json?raw=true
+With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-fwUpdate/templates.json?raw=true
 ~~~
