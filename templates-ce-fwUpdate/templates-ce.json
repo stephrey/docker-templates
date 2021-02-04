@@ -17,13 +17,13 @@
       "name": "PASSWORD",
       "label": "Root password",
       "description": "Password used by the root user.",
-      "preset": "wago"
+      "default": "wago"
     },
     {
       "name": "SERVICE_NAME",
       "label": "Name of Docker Container",
       "description": "Docker Container Name.",
-      "preset": "fw"
+      "default": "fw"
     }
     ]
   },
@@ -42,13 +42,13 @@
       "name": "PASSWORD",
       "label": "Root password",
       "description": "Password used by the root user.",
-      "preset": "wago"
+      "default": "wago"
     },
     {
       "name": "SERVICE_NAME",
       "label": "Name of Docker Container",
       "description": "Docker Container Name.",
-      "preset": "fw"
+      "default": "fw"
     }
     ]
   }
