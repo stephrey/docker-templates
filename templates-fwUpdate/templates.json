@@ -10,19 +10,19 @@
     "platform": "linux",
     "env": [
     {
-      "name": "PASSWORD=wago",
+      "name": "PASSWORD",
       "label": "Root password",
       "description": "Password used by the root user.",
       "default": "wago"
     },
     {
-      "name": "SERVICE_NAME=fw",
+      "name": "SERVICE_NAME",
       "label": "Name of Docker Container",
       "description": "Docker Container Name.",
       "default": "fw"
     },
 	{
-      "name": "MAX_UPDATE_RETRYS=5",
+      "name": "MAX_UPDATE_RETRYS",
       "label": "Max atempts for update",
       "description": "Max atempts for update.",
       "default": 5
@@ -40,19 +40,19 @@
     "platform": "linux",
     "env": [
     {
-      "name": "PASSWORD=wago",
+      "name": "PASSWORD",
       "label": "Root password",
       "description": "Password used by the root user.",
       "default": "wago"
     },
     {
-      "name": "SERVICE_NAME=fw",
+      "name": "SERVICE_NAME",
       "label": "Name of Docker Container",
       "description": "Docker Container Name.",
       "default": "fw"
     },
 	{
-      "name": "MAX_UPDATE_RETRYS=5",
+      "name": "MAX_UPDATE_RETRYS",
       "label": "Max atempts for update",
       "description": "Max atempts for update.",
       "default": 5
