@@ -10,7 +10,6 @@
     "image": "wagoautomation/fw-update:3.0.18",
     "restart_policy": "on-failure",
     "name": "fw",
-    "network": "host",
     "platform": "linux",
     "env": [
     {
@@ -24,6 +23,12 @@
       "label": "Name of Docker Container",
       "description": "Docker Container Name.",
       "default": "fw"
+    },
+    {
+      "name": "MAX_UPDATE_RETRYS=5",
+      "label": "Max atempts for update",
+      "description": "Docker Container Name.",
+      "default": 5
     }
     ]
   },
@@ -35,7 +40,6 @@
     "image": "wagoautomation/fw-update:3.0.17",
     "restart_policy": "on-failure",
     "name": "fw",
-    "network": "host",
     "platform": "linux",
     "env": [
     {
@@ -49,6 +53,12 @@
       "label": "Name of Docker Container",
       "description": "Docker Container Name.",
       "default": "fw"
+    },
+	{
+      "name": "MAX_UPDATE_RETRYS=5",
+      "label": "Max atempts for update",
+      "description": "Docker Container Name.",
+      "default": 5
     }
     ]
   }
