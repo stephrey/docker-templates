@@ -24,7 +24,7 @@
 	{
       "name": "MAX_UPDATE_RETRYS=5",
       "label": "Max atempts for update",
-      "description": "Docker Container Name.",
+      "description": "Max atempts for update.",
       "default": 5
     }
     ]
@@ -54,7 +54,7 @@
 	{
       "name": "MAX_UPDATE_RETRYS=5",
       "label": "Max atempts for update",
-      "description": "Docker Container Name.",
+      "description": "Max atempts for update.",
       "default": 5
     }
     ]
