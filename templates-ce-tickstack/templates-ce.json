@@ -1,0 +1,213 @@
+{
+"version": "2",
+"templates":
+[  
+ {
+    "type": 1,
+    "title": "wago network-creation",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/docker.png?raw=true",
+    "description": "Container to init an network for TICK stack",
+    "image": "docker",
+	"network": "bridge",
+	"command": "docker network create monitoring",
+    "name": "wago-network-init",
+	"restart_policy": "no",
+    "platform": "linux",
+    "volumes": [
+      {
+        "bind": "/var/run/docker.sock",
+        "container": "/var/run/docker.sock"
+      }     
+    ] 	
+  },
+  {
+    "type": 1,
+    "title": "wago node-red-iot",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/nodered.png?raw=true",
+    "description": "Container with Node-red-iot",
+    "image": "wagoautomation/node-red-iot:latest",
+    "restart_policy": "unless-stopped",
+    "name": "wago-node-red-iot",
+	"network": "host",
+    "platform": "linux",
+    "volumes": [
+      {
+        "bind": "node_red_user_data",
+        "container": "/data"
+      },
+      {
+        "bind": "node_red_user_datacgroup",
+        "container": "/sys/fs/cgroup"
+      },
+	        {
+        "bind": "/var/www/",
+        "container": "/var/www/"
+      }
+    ]
+  },
+    {
+    "type": 1,
+    "title": "wago mqtt-broker",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/mqtt.png?raw=true",
+    "description": "Container with MQTT Broker",
+    "image": "eclipse-mosquitto",
+    "restart_policy": "unless-stopped",
+    "name": "wago-mqtt-broker",
+	"network": "monitoring",
+    "platform": "linux",
+    "ports": [
+      "1883:1883/tcp",
+	  "9001:9001/tcp"
+    ],
+    "volumes": [
+      {
+        "bind": "mosquitto-volume",
+        "container": "/mosquitto/data"
+      },
+      {
+        "bind": "mosquitto-log",
+        "container": "/mosquitto/log"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "wago influxdb-generate-empty-db",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/influxempty.png?raw=true",
+    "description": "Container to init an empty Influx DB",
+    "image": "influxdb",
+    "name": "wago-influxdb-init-database",
+	"restart_policy": "no",
+	"command": "/init-influxdb.sh",
+    "network": "monitoring",
+    "platform": "linux",
+    "env": [
+      {
+        "name": "INFLUXDB_DB",
+        "label": "Name of influx database.",
+        "default": "homedb"    
+      },
+      {
+        "name":"INFLUXDB_HTTP_AUTH_ENABLED",
+        "label": "Authentification enable",
+        "default": "true"
+      }, 
+      {
+        "name":"INFLUXDB_ADMIN_USER",
+        "label": "Admin user",
+        "default": "admin"   
+      },
+      {
+        "name":"INFLUXDB_ADMIN_PASSWORD",
+        "label": "Admin user password",
+        "default": "wagowago"   
+      }, 
+      {
+        "name":"INFLUXDB_USER",
+        "label": "user",
+        "default": "home"   
+      }, 
+      {
+        "name":"INFLUXDB_USER_PASSWORD",
+        "label": "user password",
+        "default": "wagowago"   
+      }
+    ],
+    "volumes": [
+      {
+        "bind": "influxdb-volume",
+        "container": "/var/lib/influxdb"
+      }     
+    ] 	
+  },
+ {
+    "type": 1,
+    "title": "wago influxdb-db",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/influxdb.png?raw=true",
+    "description": "Container with Influx DB",
+    "image": "influxdb",
+    "name": "wago-influxdb",
+	"restart_policy": "always",
+    "network": "monitoring",
+    "platform": "linux",
+	"env": [
+      {
+        "name": "INFLUXDB_DB",
+        "label": "Name of influx database.",
+        "default": "homedb"    
+      }
+    ],
+	"ports": [
+      "8086:8086/tcp"
+    ],
+    "volumes": [
+      {
+        "bind": "influxdb-volume",
+        "container": "/var/lib/influxdb"
+      }     
+    ] 	
+  },
+ {
+    "type": 1,
+    "title": "wago telegraf-configuration",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/alpine.png?raw=true",
+    "description": "Container to set telegraf.conf file ",
+    "image": "wagoautomation/config-tickstack:1.0.0",
+	"command": "/root/do.sh",
+    "name": "wago-telegraf-configuration",
+	"restart_policy": "no",
+    "platform": "linux",
+    "volumes": [
+      {
+        "bind": "/etc/telegraf",
+        "container": "/home"
+      }     
+    ] 	
+  },
+ {
+    "type": 1,
+    "title": "wago telegraf",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/telegraf.png?raw=true",
+    "description": "Container to collect data and push to Influx DB",
+    "image": "telegraf",
+    "name": "wago-telegraf",
+	"restart_policy": "always",
+    "network": "monitoring",
+    "platform": "linux",
+    "volumes": [
+      {
+        "bind": "/etc/telegraf/telegraf.conf",
+        "container": "/etc/telegraf/telegraf.conf"
+      }     
+    ] 	
+  },
+ {
+    "type": 1,
+    "title": "wago chronograf",    
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/chronograf.png?raw=true",
+    "description": "Container to query Influx DB",
+    "image": "chronograf",
+    "name": "wago-chronograf",
+	"restart_policy": "always",
+    "network": "monitoring",
+    "platform": "linux",
+	"env": [
+      {
+        "name": "INFLUXDB_URL",
+        "label": "URL of influx database",
+		"default": "http://wago-influxdb:8086"  
+      }
+    ],
+	"ports": [
+      "8888:8888/tcp"
+    ],
+    "volumes": [
+      {
+        "bind": "chronograf-volume",
+        "container": "/var/lib/chronograf"
+      }     
+    ] 	
+  }
+]
+}
+
