@@ -166,7 +166,7 @@
     "title": "wago telegraf",    
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/telegraf.png?raw=true",
     "description": "Container to collect data and push to Influx DB",
-    "image": "telegraf",
+    "image": "arm32v7/telegraf",
     "name": "wago-telegraf",
 	"restart_policy": "always",
     "network": "monitoring",
