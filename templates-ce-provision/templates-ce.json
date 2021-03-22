@@ -5,7 +5,7 @@
   {
     "type": 1,
     "title": "provision pfc",
-    "logo": "http://192.168.10.100/swarm.png",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-provision/templates-ce.json?raw=true ",
     "description": "Add PFC to a swarm cluster and a local docker repository",
     "image": "wagoautomation/provision-pfc-arm32v7:1.0.0",
     "name": "provision-pfc",
