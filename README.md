@@ -25,3 +25,9 @@ With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templa
 With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-fwUpdate/templates-ce.json?raw=true 
 With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-fwUpdate/templates.json?raw=true
 ~~~
+
+<H4>Provision a new PLC Device to a swarm cluster, make entry inside portainer settings use external templates:</H4>
+
+~~~  
+With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-provision/templates-ce.json?raw=true
+~~~
