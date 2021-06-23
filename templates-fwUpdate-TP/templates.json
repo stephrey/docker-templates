@@ -1,7 +1,7 @@
 [
   {
     "type": 1,
-    "title": "wago pfc200 FW-Update FW18",
+    "title": "wago TP FW-Update FW18",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to update Host-Firmware of TP or Edge Controller -[18]",
     "image": "wagoautomation/fw-update-tp:3.2.18",
