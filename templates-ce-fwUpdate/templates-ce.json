@@ -2,9 +2,39 @@
 "version": "2",
 "templates":
 [
+{
+    "type": 1,
+    "title": "wago pfc200 FW-Update FW18 SP3",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of PFC 200 G2 -[18]",
+    "image": "wagoautomation/fw-update:4.2.18",
+    "restart_policy": "on-failure",
+    "name": "fw",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD",
+      "label": "Root password",
+      "description": "Password used by the root user.",
+      "default": "wago"
+    },
+    {
+      "name": "SERVICE_NAME",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name.",
+      "default": "fw"
+    },
+    {
+      "name": "MAX_UPDATE_RETRYS",
+      "label": "Max atempts for update",
+      "description": "Max atempts for update.",
+      "default": 5
+    }
+    ]
+  },
   {
     "type": 1,
-    "title": "wago pfc200 FW-Update FW18",
+    "title": "wago pfc200 FW-Update FW18 SP1",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to update Host-Firmware of PFC 200 G2 -[18]",
     "image": "wagoautomation/fw-update:3.2.18",
