@@ -43,3 +43,4 @@ With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/tem
 ~~~  
 With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-servicecloud-pfc/templates-ce.json?raw=true
 ~~~
+![alt text](http://url/to/img.png)
