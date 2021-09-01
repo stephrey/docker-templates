@@ -1,4 +1,4 @@
-# docker-templates
+![alt text](https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true) # docker-templates
 <H2>Container Portainer templates.</H2>
 
 <H4>To use TickStak make entry inside portainer settings use external templates:</H4>
@@ -43,4 +43,3 @@ With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/tem
 ~~~  
 With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-servicecloud-pfc/templates-ce.json?raw=true
 ~~~
-![alt text](https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true)
