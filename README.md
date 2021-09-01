@@ -1,3 +1,4 @@
+![alt text](https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true) 
 # docker-templates
 <H2>Container Portainer templates.</H2>
 
@@ -30,4 +31,16 @@ With portainer: https://github.com/Helmut-Saal/docker-templates/blob/main/templa
 
 ~~~  
 With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-provision/templates-ce.json?raw=true
+~~~
+
+<H4>Servicecloud configuration for Edge Gateway, make entry inside portainer settings use external templates:</H4>
+
+~~~  
+With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-servicecloud-gateway/templates-ce.json?raw=true
+~~~
+
+<H4>Servicecloud configuration for PFC to the Edge Gateway, make entry inside portainer settings use external templates:</H4>
+
+~~~  
+With portainer-ce: https://github.com/Helmut-Saal/docker-templates/blob/main/templates-ce-servicecloud-pfc/templates-ce.json?raw=true
 ~~~
