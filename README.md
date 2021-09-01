@@ -1,4 +1,5 @@
-![alt text](https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true) # docker-templates
+![alt text](https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true) 
+# docker-templates
 <H2>Container Portainer templates.</H2>
 
 <H4>To use TickStak make entry inside portainer settings use external templates:</H4>
