@@ -1,0 +1,48 @@
+{
+"version": "2",
+"templates":
+[
+  {
+    "type": 1,
+    "title": "wago edge servicecloud gateway",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to etablish a connection gateway to Servicecloud",
+    "image": "wagoautomation/sc_gw_deploy:1",
+    "restart_policy": "unless-stopped",
+    "name": "wago-servicecloud-gateway",
+    "platform": "linux",
+	"volumes": [
+      {
+        "bind": "/home",
+        "container": "/home"
+      }     
+    ] 
+    "env": [
+    {
+      "name": "SSH_PASSWORD",
+      "label": "SSH root password",
+      "description": "Password used by the root user.",
+      "default": "mypassword"
+    },
+    {
+      "name": "INFLUXDB_BUCKET",
+      "label": "Database bucket",
+      "description": "Name of influxDB bucket.",
+      "default": "customer-bucket"
+    },
+    {
+      "name": "CUST_URL",
+      "label": "Customer url entrypoint",
+      "description": "URL to connect with Servicecloud.",
+      "default": "https://custXXXXX.device.services.wago.com"
+    },
+	{
+      "name": "INFLUXDB_TOKEN",
+      "label": "Customer token",
+      "description": "Your token to connect to Servicecloud.",
+      "default": "X9n-HBh.........SANVD''.......ASS!?"
+    }
+    ]
+  }
+]
+}
