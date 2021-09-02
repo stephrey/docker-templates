@@ -8,7 +8,7 @@
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to etablish a connection gateway to Servicecloud",
     "image": "wagoautomation/sc_gw_deploy:1",
-    "restart_policy": "unless-stopped",
+    "restart_policy": "none",
     "name": "wago-servicecloud-gateway",
     "platform": "linux",
 	"volumes": [
