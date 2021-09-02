@@ -43,6 +43,54 @@
         "default": "X9n-HBh.........SANVD''.......ASS!?"
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "wago pfc connector to servicecloud gateway",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to etablish a PFC connection to the Edge gateway",
+    "image": "wagoautomation/sc_pfc_deploy:1",
+    "restart_policy": "no",
+    "name": "wago-servicecloud-edge-gateway-connector",
+    "platform": "linux",
+	"volumes": [
+      {
+        "bind": "/home",
+        "container": "/home"
+      }     
+    ], 
+    "env": [
+      {
+        "name": "SSH_PASSWORD",
+        "label": "SSH root password",
+        "description": "Password used by the root user.",
+        "default": "mypassword"
+      },
+      {
+        "name": "INFLUXDB_BUCKET",
+        "label": "Database bucket",
+        "description": "Name of influxDB bucket.",
+        "default": "customer-bucket"
+      },
+      {
+        "name": "PFC_IP",
+        "label": "IP Address PFC",
+        "description": "IP Address of your PFC device.",
+        "default": "192.168.2.xxx"
+      },
+	  {
+        "name": "EDGE_IP",
+        "label": "IP Address Edge Gateway",
+        "description": "IP Address of your Edge device.",
+        "default": "192.168.2.xxx"
+      },
+	  {
+        "name": "INFLUXDB_TOKEN",
+        "label": "Customer token",
+        "description": "Your token to connect to Servicecloud.",
+        "default": "X9n-HBh.........SANVD''.......ASS!?"
+      }
+    ]
   }
 ]
 }
