@@ -46,7 +46,7 @@
   },
   {
     "type": 1,
-    "title": "wago pfc connector to servicecloud gateway",
+    "title": "pfc connector to servicecloud gateway",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to etablish a PFC connection to the Edge gateway",
     "image": "wagoautomation/sc_pfc_deploy:0.0.1",
