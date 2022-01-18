@@ -8,7 +8,7 @@
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to etablish a connection gateway to Servicecloud",
     "image": "wagoautomation/sc_gw_deploy:0.0.1",
-    "restart_policy": "no",
+    "restart_policy": "unless-stopped",
     "name": "edge-servicecloud-gateway",
     "platform": "linux",
 	"volumes": [
@@ -51,7 +51,7 @@
     "description": "Container to etablish a PFC connection to the Edge gateway",
     "image": "wagoautomation/sc_pfc_deploy:0.0.1",
     "restart_policy": "no",
-    "name": "pfc-edge-gateway-connector",
+    "name": "deploy-edge-gateway-connector",
     "platform": "linux",
 	"volumes": [
       {
@@ -98,7 +98,7 @@
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to etablish a PFC connection to the Servicecloud",
     "image": "wagoautomation/sc_pfc_direct_deploy:0.0.1",
-    "restart_policy": "no",
+    "restart_policy": "unless-stopped",
     "name": "pfc-servicecloud-connector",
     "platform": "linux",
 	"volumes": [
@@ -114,27 +114,21 @@
         "description": "Password used by the root user.",
         "default": "mypassword"
       },
-      {
+       {
         "name": "INFLUXDB_BUCKET",
         "label": "Database bucket",
         "description": "Name of influxDB bucket.",
         "default": "customer-bucket"
       },
       {
-        "name": "PFC_IP",
-        "label": "IP Address PFC",
-        "description": "IP Address of your PFC device.",
-        "default": "192.168.2.xxx"
-      },
-	  {
-        "name": "EDGE_IP",
-        "label": "IP Address Edge Gateway",
-        "description": "IP Address of your Edge device.",
-        "default": "192.168.2.xxx"
+        "name": "CUST_URL",
+        "label": "Customer url entrypoint",
+        "description": "URL to connect with Servicecloud.",
+        "default": "https://custXXXXX.device.services.wago.com"
       },
 	  {
         "name": "INFLUXDB_TOKEN",
-        "label": "Customer token",
+        "label": "Customer influxDB token",
         "description": "Your token to connect to Servicecloud.",
         "default": "X9n-HBh.........SANVD''.......ASS!?"
       }
