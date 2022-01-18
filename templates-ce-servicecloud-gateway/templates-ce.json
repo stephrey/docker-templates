@@ -7,7 +7,7 @@
     "title": "wago edge servicecloud gateway",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to etablish a connection gateway to Servicecloud",
-    "image": "wagoautomation/sc_gw_deploy:1",
+    "image": "wagoautomation/sc_gw_deploy:0.0.1",
     "restart_policy": "no",
     "name": "wago-servicecloud-gateway",
     "platform": "linux",
@@ -20,8 +20,8 @@
     "env": [
       {
         "name": "SSH_PASSWORD",
-        "label": "SSH root password",
-        "description": "Password used by the root user.",
+        "label": "Root password Edge device",
+        "description": "Password for SSH connection.",
         "default": "mypassword"
       },
       {
@@ -38,7 +38,7 @@
       },
 	  {
         "name": "INFLUXDB_TOKEN",
-        "label": "Customer token",
+        "label": "Customer influxDB token",
         "description": "Your token to connect to Servicecloud.",
         "default": "X9n-HBh.........SANVD''.......ASS!?"
       }
