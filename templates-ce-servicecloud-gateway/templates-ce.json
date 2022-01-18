@@ -94,9 +94,9 @@
   },
 	 {
     "type": 1,
-    "title": "pfc connector to servicecloud",
+    "title": "wago pfc connector to servicecloud",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
-    "description": "Container to etablish a PFC connection to the service cloud",
+    "description": "Container to etablish a PFC connection to the Servicecloud",
     "image": "wagoautomation/sc_pfc_direct_deploy:0.0.1",
     "restart_policy": "no",
     "name": "pfc-servicecloud-connector",
