@@ -9,7 +9,7 @@
     "description": "Container to etablish a connection gateway to Servicecloud",
     "image": "wagoautomation/sc_gw_deploy:0.0.1",
     "restart_policy": "unless-stopped",
-    "name": "edge-servicecloud-gateway",
+    "name": "deploy-edge-servicecloud-gateway",
     "platform": "linux",
 	"volumes": [
       {
@@ -99,7 +99,7 @@
     "description": "Container to etablish a PFC connection to the Servicecloud",
     "image": "wagoautomation/sc_pfc_direct_deploy:0.0.1",
     "restart_policy": "unless-stopped",
-    "name": "pfc-servicecloud-connector",
+    "name": "deploy-pfc-servicecloud-connector",
     "platform": "linux",
 	"volumes": [
       {
