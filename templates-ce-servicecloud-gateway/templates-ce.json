@@ -101,17 +101,7 @@
     "restart_policy": "no",
     "name": "alpine",
 	"network": "host",
-    "platform": "linux",
-	"volumes": [
-      {
-        "bind": "/var/run/docker.sock",
-        "container": "/var/run/docker.sock"
-      },
-	      {
-        "bind": "/etc/telegraf/telegrafgateway.conf",
-        "container": "/etc/telegraf/telegraf.conf:ro"
-      }
-    ], 
+    "platform": "linux", 
     "env": [
       {
         "name": "SSH_PASSWORD",
