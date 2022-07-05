@@ -4,7 +4,7 @@
 [  
  {
     "type": 1,
-    "title": "network-creation",    
+    "title": "wago network-creation",    
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/docker.png?raw=true",
     "description": "Container to init an network for TICK stack",
     "image": "docker",
