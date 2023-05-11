@@ -97,7 +97,7 @@
     "title": "wago pfc connector to servicecloud",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
     "description": "Container to etablish a PFC connection to the Servicecloud",
-    "image": "wagoautomation/sc_pfc_direct_deploy:0.0.2",
+    "image": "wagoautomation/sc_pfc_direct_deploy:0.0.5",
     "restart_policy": "no",
     "name": "alpine",
 	"network": "host",
