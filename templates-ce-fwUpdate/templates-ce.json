@@ -2,11 +2,41 @@
 "version": "2",
 "templates":
 [
+    {
+    "type": 1,
+    "title": "wago pfc200 FW-Update FW26",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of PFC 200 G2 -[26]",
+    "image": "wagoautomation/fw-update:04.04.03-26",
+    "restart_policy": "on-failure",
+    "name": "fw",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD",
+      "label": "Root password",
+      "description": "Password used by the root user.",
+      "default": "wago"
+    },
+    {
+      "name": "SERVICE_NAME",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name.",
+      "default": "fw"
+    },
+	{
+      "name": "MAX_UPDATE_RETRYS",
+      "label": "Max atempts for update",
+      "description": "Max atempts for update.",
+      "default": 5
+    }
+    ]
+  },
   {
     "type": 1,
     "title": "wago pfc200 FW-Update FW25",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
-    "description": "Container to update Host-Firmware of PFC 200 G2 -[24]",
+    "description": "Container to update Host-Firmware of PFC 200 G2 -[25]",
     "image": "wagoautomation/fw-update:04.03.03-25",
     "restart_policy": "on-failure",
     "name": "fw",
@@ -36,7 +66,7 @@
     "type": 1,
     "title": "wago pfc200 FW-Update FW24",
     "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
-    "description": "Container to update Host-Firmware of PFC 200 G2 -[25]",
+    "description": "Container to update Host-Firmware of PFC 200 G2 -[24]",
     "image": "wagoautomation/fw-update:04.02.13-24",
     "restart_policy": "on-failure",
     "name": "fw",
