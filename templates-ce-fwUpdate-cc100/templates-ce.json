@@ -1,0 +1,96 @@
+{
+"version": "2",
+"templates":
+[
+    {
+    "type": 1,
+    "title": "wago edge and tp FW-Update FW26",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of edge-controller or tp -[26]",
+    "image": "wagoautomation/fw-update-edge:04.04.03-26",
+    "restart_policy": "on-failure",
+    "name": "fw",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD",
+      "label": "Root password",
+      "description": "Password used by the root user.",
+      "default": "wago"
+    },
+    {
+      "name": "SERVICE_NAME",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name.",
+      "default": "fw"
+    },
+	{
+      "name": "MAX_UPDATE_RETRYS",
+      "label": "Max atempts for update",
+      "description": "Max atempts for update.",
+      "default": 5
+    }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "wago edge and tp FW-Update FW25",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of edge-controller or tp -[25]",
+    "image": "wagoautomation/fw-update-edge:04.03.03-25",
+    "restart_policy": "on-failure",
+    "name": "fw",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD",
+      "label": "Root password",
+      "description": "Password used by the root user.",
+      "default": "wago"
+    },
+    {
+      "name": "SERVICE_NAME",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name.",
+      "default": "fw"
+    },
+	{
+      "name": "MAX_UPDATE_RETRYS",
+      "label": "Max atempts for update",
+      "description": "Max atempts for update.",
+      "default": 5
+    }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "wago edge and tp FW-Update FW23",
+    "logo": "https://github.com/Helmut-Saal/docker-templates/blob/main/icons/wagoOpenSource.png?raw=true",
+    "description": "Container to update Host-Firmware of edge-controller or tp -[23]",
+    "image": "wagoautomation/fw-update-edge:04.02.13-24",
+    "restart_policy": "on-failure",
+    "name": "fw",
+    "platform": "linux",
+    "env": [
+    {
+      "name": "PASSWORD",
+      "label": "Root password",
+      "description": "Password used by the root user.",
+      "default": "wago"
+    },
+    {
+      "name": "SERVICE_NAME",
+      "label": "Name of Docker Container",
+      "description": "Docker Container Name.",
+      "default": "fw"
+    },
+	{
+      "name": "MAX_UPDATE_RETRYS",
+      "label": "Max atempts for update",
+      "description": "Max atempts for update.",
+      "default": 5
+    }
+    ]
+  }
+]
+}
